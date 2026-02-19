@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+    background-color: #111;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(100, 5px);
+    grid-template-rows: repeat(100, 5px);
+    gap: 1px;
+}
+
+.cell {
+    background-color: black;
+    border: 1px solid #000000;
+    transition: background-color 0.3s ease;
+}
+
+.cell.active {
+    background-color: red;
+}
+
+#clear {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
